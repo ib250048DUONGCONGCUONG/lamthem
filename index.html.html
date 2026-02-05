@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アルバイト管理Webサイト</title>
+  <link rel="stylesheet" href="time.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>アルバイト勤務記録</h1>
+
+  <div class="card">
+    <label>勤務日：</label>
+    <input type="date" id="date">
+
+    <label>勤務時間：</label>
+    <input type="number" id="hours" placeholder="5">
+    <span>時間</span>
+
+    <label>時給：</label>
+    <input type="number" id="wage" placeholder="1100">
+    <span>円/時間</span>
+
+    <button onclick="calculate()">計算する</button>
+  </div>
+
+  <div class="result" id="result">
+    <h2>給料の合計</h2>
+    <p>合計金額：<span id="total">0</span> 円</p>
+    <p class="thanks">お疲れ様でした！</p>
+  </div>
+
+</div>
+
+<script src="time.js"></script>
+</body>
+</html>
